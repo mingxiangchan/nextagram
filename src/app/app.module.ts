@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core'
 import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { UserListComponent } from './user-list/user-list.component'
+import { UserListComponent } from './user-list/user-list.component';
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [AppComponent, UserListComponent],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
