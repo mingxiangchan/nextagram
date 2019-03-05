@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterModule, Routes } from '@angular/router'
 import { UserListComponent } from './user-list/user-list.component'
+import { HomePageComponent } from './home-page/home-page.component'
 
-const routes: Routes = [{ path: 'users', component: UserListComponent }]
+const routes: Routes = [
+  { path: 'users', component: UserListComponent },
+  { path: '', component: HomePageComponent },
+]
 
 @NgModule({
   declarations: [],

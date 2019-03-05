@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { UserImagesComponent } from './user-images/user-images.component';
+import { HomePageComponent } from './home-page/home-page.component'
 
 @NgModule({
-  declarations: [AppComponent, UserListComponent],
+  declarations: [AppComponent, UserListComponent, UserImagesComponent, HomePageComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
