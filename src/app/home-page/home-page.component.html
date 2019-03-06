@@ -1,5 +1,9 @@
 <div>
   <div *ngFor="let user of users">
-    <app-user-images [user]="user"></app-user-images>
+    <h2>
+      <a routerLink="/users/{{ user.id }}">
+        {{ user.id }}: {{ user.username }}
+      </a>
+    </h2>
   </div>
 </div>
