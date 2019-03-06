@@ -17,7 +17,7 @@ export class UserProfileComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const id: string = this.route.snapshot.params.id
+    const id: number = parseInt(this.route.snapshot.params.id)
     this.imagesService.getUserImages(id).subscribe(images => {
       this.images = images
     })
